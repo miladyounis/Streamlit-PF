@@ -78,6 +78,7 @@ def main():
                 'Comments': comments
             }
             df = df.append(new_record, ignore_index=True)
+            df = prepare_data(df)
             output = save_data(df)
             st.download_button(label='Download Updated Data', data=output, file_name='updated_expenses.xlsx')
 
