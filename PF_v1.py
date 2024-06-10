@@ -5,7 +5,7 @@ from io import BytesIO
 
 # Function to load data without caching
 def load_data():
-    df = pd.read_excel('C:/Users/I577398/Downloads/Streamlit PF v1.xlsx', sheet_name='Sheet1')
+    df = pd.read_excel('https://github.com/miladyounis/Streamlit-PF/blob/main/Streamlit%20PF%20v1.xlsx', sheet_name='Sheet1')
     return df
 
 def prepare_data(df):
